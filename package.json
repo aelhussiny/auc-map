@@ -1,0 +1,49 @@
+{
+  "name": "react-jsapi-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://aelhussiny.github.io/auc-map",
+  "dependencies": {
+    "connected-react-router": "^4.3.0",
+    "detect-browser-language": "0.0.1",
+    "esri-loader": "^1.7.0",
+    "highcharts": "^6.0.7",
+    "material-ui": "^0.19.4",
+    "material-ui-bottom-sheet": "^0.5.1",
+    "react": "^15.6.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^15.6.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2",
+    "redux-persist": "^4.10.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "react-scripts run lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "advanced-react-scripts": "^0.3.44",
+    "gh-pages": "^1.0.0"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}

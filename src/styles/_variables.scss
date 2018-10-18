@@ -1,0 +1,61 @@
+// Variables //
+
+// Colors
+$black: #201f21;
+$white: #fff;
+
+$primary: #319FDD;
+$secondary: #44515c;
+
+$aucdblue: #0D3960;
+$auclblue: #8BD3F5;
+
+$blue: lighten(#0066a4, 2%);
+$red: #da7e7d;
+
+$metric-green: #6ec9ae;
+$metric-yellow: #fdfa8b;
+$metric-red: #da7e7d;
+
+$grey: #57575A;
+$lte-grey: lighten($grey, 50%);
+$drk-grey: darken($grey, 20%);
+
+$border-grey: #bac2ca;
+
+// Fixed Panel Width
+$panel-width: 30%;
+$panel-min-width: 400px;
+$panel-max-width: 700px;
+
+// Transitions
+$anim-reg: all ease-in-out 0.25s;
+
+// Breakpoints
+$breakpoints: (
+    xs: 480px,
+    sm: 768px,
+    md: 1025px,
+    lg: 1480px,
+    xl: 1600px
+);
+
+// Responsive
+@mixin respond($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,700&subset=arabic');
+@import url('https://fonts.googleapis.com/css?family=Abel');

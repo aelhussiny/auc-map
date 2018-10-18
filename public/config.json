@@ -1,0 +1,10 @@
+{
+  "appVersion": "1.0.0"
+  , "apiUrl": "api"
+  , "loginUrl": "api/auth/arcgis"
+  , "logoutUrl": "api/logout"
+  , "webmapId": "5bba817806c846fdbfc968db06e09317"
+  , "jsapiUrl": "https://js.arcgis.com/4.9/"
+  , "jsapiV4": true
+  , "portalUrl": "https://ps-dubai.maps.arcgis.com"
+}
