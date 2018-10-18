@@ -88,44 +88,10 @@ class Map extends Component {
 
   setupWidgetsAndLayers() {
     loadModules([
-      'esri/widgets/BasemapGallery',
-      'esri/widgets/Expand',
-      'esri/widgets/LayerList',
-      'dojo/on',
     ])
     .then( ([
-      BasemapGallery,
-      Expand,
-      LayerList,
-      on,
     ]) => {
-      let basemapGallery = new BasemapGallery({
-        view: this.view,
-        container: document.createElement("div")
-      });
-      let layerList = new LayerList({
-        view: this.view,
-        container: document.createElement("div")
-      })
-      this.bgExpand = new Expand({
-        view: this.view,
-        content: basemapGallery.container,
-        id: 'map-basemapgallery-expand',
-        expandIconClass: 'esri-icon-basemap'
-      });
-      this.llExpand = new Expand({
-        view: this.view,
-        content: layerList.container,
-        id: 'map-layerlist-expand',
-        expandIconClass: 'esri-icon-layers'
-      });
       this.view.ui.move("zoom", "bottom-right");
-      this.view.ui.add(this.bgExpand, {
-        position: "bottom-right"
-      });
-      this.view.ui.add(this.llExpand, {
-        position: "bottom-right"
-      });
 
       window.view = this.view;
       this.view.constraints.rotationEnabled = false;
