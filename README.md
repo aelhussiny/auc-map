@@ -1,3 +1,3 @@
-### DOT 3D Dashboard
+### AUC Maps
 
-This is the repository for DOT 3D Dashboard web application.
+This is the repository for AUC Maps web application.

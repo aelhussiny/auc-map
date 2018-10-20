@@ -8,6 +8,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import '../styles/SidePanel.scss';
 
+import Search from './Search';
+
 class SidePanel extends Component {
     constructor(props) {
         super(props);
@@ -34,24 +36,33 @@ class SidePanel extends Component {
             "search": "Search",
             "bookmarks": "Bookmarks",
             "list": "Places",
-            "directory": "People"
+            "directory": "People",
+            "feature": "Point of Interest"
+        }
+
+        let contained = <div></div>;
+        switch(this.props.view.currentView) {
+            case "search":
+                contained = <Search />
         }
 
         return (
             <div className={"panel " + isClosed + " " + isMobile}>
 
-                <TransitionGroup component="div">
+                <div>
+                    <section className={"panel__headbar " + isMobile}>
+                        <p className="title">{titles[this.props.view.currentView]}</p>
+                        <button className="closeButton" onClick={()=>{this.props.togglePanel(false)}}><span className="esri-icon-close"></span></button>
+                    </section>
+                </div>
+
+                <TransitionGroup component="div" className="transitioner">
                     <CSSTransition
                         key={this.props.view.currentView}
                         timeout={300}
                         classNames='fade'
                     >
-                    <div>
-                        <section className={"panel__headbar " + isMobile}>
-                            <p className="title">{titles[this.props.view.currentView]}</p>
-                            <button className="closeButton" onClick={()=>{this.props.togglePanel(false)}}><span className="esri-icon-close"></span></button>
-                        </section>
-                    </div>
+                        {contained}
                     </CSSTransition>
                 </TransitionGroup>
 

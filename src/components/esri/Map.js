@@ -17,10 +17,10 @@ import { bindActionCreators } from 'redux';
 import './Map.css'
 import { setTimeout } from 'timers';
 
-class Map extends Component {
+import { appFeatureOperations } from '../../redux/appFeatures';
+import { viewOperations } from '../../redux/view';
 
-  bgExpand = null;
-  llExpand = null;
+class Map extends Component {
 
   componentDidMount() {
     this.isAGOL = this.props.config.portalUrl.indexOf("maps.arcgis.com") > -1;
@@ -33,21 +33,35 @@ class Map extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-      if (this.view && nextProps.lang.selectedLang === 'en') {
-          this.view.ui.move("zoom", "top-right");
-          this.view.ui.move(this.bgExpand, "top-right");
-          this.view.ui.move(this.llExpand, "top-right");
-      } else if (this.view && nextProps.lang.selectedLang === 'ar') {
-          this.view.ui.move("zoom", "top-left");
-          this.view.ui.move(this.bgExpand, "top-left");
-          this.view.ui.move(this.llExpand, "top-left");
-      }
+    if (this.props.selectedFeature !== nextProps.selectedFeature) {
+      this.newSelect(nextProps.selectedFeature);
+    }
   }
 
   render() {
     return (
       <div ref="mapDiv" id="viewContainer" ></div>
     );
+  }
+
+  newSelect(feature) {
+    this.view.graphics.removeAll();
+    if(feature) {
+      console.log("Selected feature is", feature.attributes.NAME);
+      var graphic = {
+        geometry: feature.geometry,
+        attributes: feature.attributes,
+        symbol: {
+          type: "simple-fill",  // autocasts as new SimpleFillSymbol()
+          style: "none",
+          outline: {  // autocasts as new SimpleLineSymbol()
+            color: [255, 0, 0, 1],
+            width: "2px"
+          }
+        }
+      };
+      this.view.graphics.add(graphic);
+    }
   }
 
   //
@@ -65,7 +79,7 @@ class Map extends Component {
         this.finishedLoading();
       },
       error => {
-        console.error("maperr", error);
+        console.warn("Map Error:", error);
         setTimeout(()=>{
           this.startup(this.props.appConfig.webmapId, this.props.appConfig.mapOptions, this.props.user);
         }, 1000);
@@ -95,6 +109,9 @@ class Map extends Component {
 
       window.view = this.view;
       this.view.constraints.rotationEnabled = false;
+      if(this.props.isMobile) {
+        this.view.extent = {"spatialReference":{"latestWkid":3857,"wkid":102100},"xmin":3506040.620998138,"ymin":3504230.984919316,"xmax":3507832.1138486187,"ymax":3507632.432678096};
+      }
 
       this.view.map.allLayers.items.forEach(function(layer) {
         if (layer.title === this.props.config.locationsLayerName) {
@@ -106,10 +123,12 @@ class Map extends Component {
       this.view.on("click", function (event) {
         this.view.hitTest(event).then(function(response){
             response.results.forEach(function(result){
-            });
-        });
-      });
-
+              if(result.graphic.layer.title === this.props.config.locationsLayerName) {
+                this.props.setSelectedFeature(this.props.features.filter((a)=>(a.attributes.OBJECTID === result.graphic.attributes.OBJECTID))[0]);
+              }
+            }.bind(this));
+        }.bind(this));
+      }.bind(this));
     });
   }
 
@@ -131,12 +150,18 @@ class Map extends Component {
 }
 
 const mapStateToProps = state => ({
+    features: state.features.features,
+    selectedFeature: state.features.selectedFeature,
     config: state.config,
-    lang: state.appLang
+    lang: state.appLang,
+    view: state.view.currentView,
+    isMobile: state.view.isMobile
 });
 
 const mapDispatchToProps = function (dispatch) {
   return bindActionCreators({
+    ...appFeatureOperations,
+    ...viewOperations
   }, dispatch);
 }
 

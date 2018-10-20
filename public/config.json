@@ -7,4 +7,53 @@
   , "jsapiUrl": "https://js.arcgis.com/4.9/"
   , "jsapiV4": true
   , "portalUrl": "https://ps-dubai.maps.arcgis.com"
+  , "locationsServicePath": "https://services2.arcgis.com/hUPR9iC6qnMcwWsa/ArcGIS/rest/services/AUCBuildings/FeatureServer/0"
+  , "sublocationsServicePath": "https://services2.arcgis.com/hUPR9iC6qnMcwWsa/ArcGIS/rest/services/AUCSublocations/FeatureServer/0"
+  , "locationsLayerName": "AUCBuildings"
+  , "categories": {
+      "ADMIN": {
+        "name": "Administrative",
+        "icon": "assignment_ind"
+      }
+      , "ACADEM": {
+        "name": "Academic",
+        "icon": "school"
+      }
+      , "ART": {
+        "name": "Arts",
+        "icon": "brush"
+      }
+      , "ATHL": {
+        "name": "Athletics",
+        "icon": "fitness_center"
+      }
+      , "COMMON": {
+        "name": "Common Public Event Places",
+        "icon": "panorama_horizontal"
+      }
+      , "DING": {
+        "name": "Dining",
+        "icon": "restaurant"
+      }
+      , "LIB": {
+        "name": "Libraries",
+        "icon": "import_contacts"
+      }
+      , "PARK": {
+        "name": "Parking",
+        "icon": "directions_car"
+      }
+      , "RES": {
+        "name": "Residential",
+        "icon": "home"
+      }
+      , "GARDN": {
+        "name": "Garden",
+        "icon": "landscape"
+      }
+      , "GATE": {
+        "name": "Gates and Entrances",
+        "icon": "lock_open"
+      }
+    }
 }

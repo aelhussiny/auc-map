@@ -11,7 +11,10 @@
     box-shadow: 0px 0px 13px 0px rgba($black,0.63);
     transition: all ease-in-out 0.3s;
     height: 100%;
+    max-height: 100%;
     overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
 
     &.is-closed {
       min-width: 0;
@@ -27,8 +30,6 @@
         width: 0;
       }
     }
-
-    overflow-y: auto;
 }
 
 .panel__headbar {
@@ -37,6 +38,7 @@
     background: $aucdblue;
     padding-top: 10px;
     padding-left: 10px;
+    flex: 1 1 0;
 
     &.is-mobile {
       display: none;
@@ -59,6 +61,16 @@
       color: white;
       top: 20px;
     }
+}
+
+.transitioner {
+  flex: 1 1 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.fade {
+  flex: 1 1 0;
 }
 
 // Transition Animations
