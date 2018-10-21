@@ -6,7 +6,8 @@ const initialState = {
   filter: {
     type: "",
     value: ""
-  }
+  },
+  bookmarks: []
 };
 
 const appFeaturesReducer = (state = initialState, action) => {
@@ -27,6 +28,12 @@ const appFeaturesReducer = (state = initialState, action) => {
       return {
         ...state,
         filter: action.payload.filter
+      }
+
+  case types.SET_BOOKMARKS:
+      return {
+        ...state,
+        bookmarks: action.payload.bookmarks
       }
 
     default:

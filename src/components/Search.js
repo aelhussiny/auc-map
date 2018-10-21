@@ -40,7 +40,7 @@ class Search extends Component {
         return (
             <div className="search">
                 <div className="searchbarpanel">
-                    <TextField style={{zIndex: 0}} id="search-field" inputStyle={{color: "black", fontSize: "12pt"}} underlineStyle={{borderColor:"#0D3960"}} underlineFocusStyle={{borderColor: "#0D3960"}} placeholder="Search" style={{fontFamily: "'Abel', sans-serif"}} fullWidth={true} value={this.state.query} type="text" onChange={this.change_query.bind(this)} />
+                    <TextField style={{zIndex: 0, marginBottom: "10px"}} id="search-field" inputStyle={{color: "black", fontSize: "12pt"}} underlineStyle={{borderColor:"#0D3960"}} underlineFocusStyle={{borderColor: "#0D3960"}} placeholder="Search" style={{fontFamily: "'Abel', sans-serif"}} fullWidth={true} value={this.state.query} type="text" onChange={this.change_query.bind(this)} />
                     <span className="clearbtn" onClick={this.clearSearch.bind(this)}>
                         <svg className="clearbtnicon" viewBox="0 0 24 24">
                             <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />

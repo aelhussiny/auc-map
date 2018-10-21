@@ -14,6 +14,22 @@ class FeatureCard extends Component {
         };
     }
 
+    toggleBookmark(ID) {
+        if(localStorage.getItem("bookmarks")) {
+            var bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+            if(bookmarks.indexOf(ID) > -1) {
+                bookmarks.splice(bookmarks.indexOf(ID), 1);
+            } else {
+                bookmarks.push(ID);
+            }
+        } else {
+            var bookmarks = [ID];
+        }
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+        this.forceUpdate();
+        this.props.setBookmarks(bookmarks);
+    }
+
     render() {
         let isMobile = '';
         if(this.props.view.isMobile) {
@@ -21,6 +37,15 @@ class FeatureCard extends Component {
         }
         var content = '';
         if (this.props.selectedFeature) {
+            var bookmarktag = '';
+            var bookmarkicon = "bookmark_border";
+            if(localStorage.getItem("bookmarks")) {
+                if(JSON.parse(localStorage.getItem("bookmarks")).indexOf(this.props.selectedFeature.attributes.OBJECTID) > -1) {
+                    bookmarkicon = "bookmark";
+                }
+            }
+            bookmarktag = <span className={"material-icons featurecard-bookmarkicon " + isMobile} onClick={(e) => {this.toggleBookmark(this.props.selectedFeature.attributes.OBJECTID);}}>{bookmarkicon}</span>;
+
             let headbarTitleStyle = {
                 fontSize: (this.props.selectedFeature.attributes.NAME.length>25)?"20px":"30px",
                 marginTop: "0px"
@@ -49,7 +74,7 @@ class FeatureCard extends Component {
             }
             var content = <div>
                 <section className={"featurecard-panel__headbar " + isMobile}>
-                    <p className={"title " + isMobile} style={headbarTitleStyle}>{this.props.selectedFeature.attributes.NAME}</p>
+                    <p className={"title " + isMobile} style={headbarTitleStyle}>{this.props.selectedFeature.attributes.NAME}</p>{bookmarktag}
                     <button className={"closeButton " + isMobile} onClick={()=>{this.props.setSelectedFeature(null)}}><span className="esri-icon-close"></span></button>
                 </section>
                 <section className={"featurecard-more-info " + isMobile}>
@@ -77,6 +102,7 @@ class FeatureCard extends Component {
 const mapStateToProps = state => ({
     view: state.view,
     selectedFeature: state.features.selectedFeature,
+    bookmarks: state.features.bookmarks,
     config: state.config
 });
 

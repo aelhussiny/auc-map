@@ -21,8 +21,16 @@ const setFilter = (filter) => ({
   }
 });
 
+const setBookmarks = (bookmarks) => ({
+  type: types.SET_BOOKMARKS,
+  payload: {
+    bookmarks: bookmarks
+  }
+});
+
 export default {
   setFeatures,
   setSelectedFeature,
-  setFilter
+  setFilter,
+  setBookmarks
 };

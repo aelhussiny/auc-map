@@ -9,6 +9,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import '../styles/SidePanel.scss';
 
 import Search from './Search';
+import CategoryList from './CategoryList';
+import BookmarkList from './BookmarkList';
 
 class SidePanel extends Component {
     constructor(props) {
@@ -44,6 +46,13 @@ class SidePanel extends Component {
         switch(this.props.view.currentView) {
             case "search":
                 contained = <Search />
+                break;
+            case "list":
+                contained = <CategoryList />
+                break;
+            case "bookmarks":
+                contained = <BookmarkList />
+                break;
         }
 
         return (

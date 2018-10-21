@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import '../styles/ListItem.scss';
 
+import { appFeatureOperations } from '../redux/appFeatures';
+
 class ListItem extends Component {
 
     constructor(props) {
@@ -21,6 +23,22 @@ class ListItem extends Component {
         }
     }
 
+    toggleBookmark(ID) {
+        if(localStorage.getItem("bookmarks")) {
+            var bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+            if(bookmarks.indexOf(ID) > -1) {
+                bookmarks.splice(bookmarks.indexOf(ID), 1);
+            } else {
+                bookmarks.push(ID);
+            }
+        } else {
+            var bookmarks = [ID];
+        }
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+        this.forceUpdate();
+        this.props.setBookmarks(bookmarks);
+    }
+
     render() {
         var title = this.highlight(this.props.title);
         var subtitle = this.props.subtitle;
@@ -28,6 +46,7 @@ class ListItem extends Component {
         var includes = this.props.includes;
         var description = this.props.description;
         var selected = this.props.selected;
+        var bookmarkable = this.props.bookmarkable;
 
         var subtitletag = '';
         if (subtitle && subtitle.length>0 && subtitle !== title) {
@@ -40,13 +59,26 @@ class ListItem extends Component {
         }
 
         var includestag = '';
-        if (includes.length > 0) {
+        if (includes && includes.length > 0) {
             includestag = <p className="includes">{includes.map((fe)=>(<li key={"includes_" + fe.attributes.OBJECTID}>{this.highlight(fe.attributes.NAME)}</li>))}</p>;   
         }
 
         var isselected = '';
         if (selected) {
             isselected = 'is-selected'
+        }
+
+        var bookmarktag = '';
+        if (bookmarkable) {
+            var bookmarkicon = "bookmark_border";
+            if (this.props.feature) {
+                if(localStorage.getItem("bookmarks")) {
+                    if(JSON.parse(localStorage.getItem("bookmarks")).indexOf(this.props.feature.attributes.OBJECTID) > -1) {
+                        bookmarkicon = "bookmark";
+                    }
+                }
+            }
+            bookmarktag = <span className="material-icons listitem-bookmarkicon" onClick={(e) => {e.stopPropagation();this.toggleBookmark(this.props.feature.attributes.OBJECTID);}}>{bookmarkicon}</span>;
         }
 
         return (
@@ -62,6 +94,7 @@ class ListItem extends Component {
                 </div>
                 <div className="listitem-action">
                     <i className="material-icons">navigate_next</i>
+                    {bookmarktag}
                 </div>
             </div>
         );
@@ -70,11 +103,13 @@ class ListItem extends Component {
 }
 
 const mapStateToProps = state => ({
-    config: state.config
+    config: state.config,
+    bookmarks: state.features.bookmarks
 });
 
 const mapDispatchToProps = function (dispatch) {
     return bindActionCreators({
+        ...appFeatureOperations
     }, dispatch);
 }
 

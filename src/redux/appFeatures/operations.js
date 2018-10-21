@@ -11,9 +11,14 @@ const setSelectedFeature = (feature) => ( dispatch ) => {
 const setFilter = (filter) => ( dispatch ) => {
   dispatch(actions.setFilter(filter));
 }
+
+const setBookmarks = (bookmarks) => ( dispatch ) => {
+  dispatch(actions.setBookmarks(bookmarks));
+}
  
 export default {
   setFeatures,
   setSelectedFeature,
-  setFilter
+  setFilter,
+  setBookmarks
 };

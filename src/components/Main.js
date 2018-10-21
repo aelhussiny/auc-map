@@ -82,6 +82,7 @@ class Main extends Component {
                 sublocations.forEach(function(sublocation) {
                     for(var i=0; i<locations.length; i++) {
                         if (locations[i].attributes.OBJECTID === sublocation.attributes.LOCATIONID) {
+                            sublocation.parentLocation = locations[i];
                             locations[i].sublocations.push(sublocation);
                             break;
                         }
