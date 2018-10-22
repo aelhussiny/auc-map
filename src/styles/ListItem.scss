@@ -1,0 +1,100 @@
+// List Item Component //
+@import 'variables';
+
+.listitem {
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid rgba($aucdblue, 0.64);
+    padding-top: 10px;
+    margin-right: 10px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    &:first-child {
+        margin-top: 0px;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &.is-selected {
+        background: rgba(lighten($auclblue, 20%), 1);
+    }
+}
+
+.listitem-icon {
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+    color: $aucdblue;
+}
+
+.listitem-content {
+    flex: 1 1 0%;
+
+    .title {
+        margin-top: 0px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        color: $aucdblue;
+
+        .highlight {
+            text-decoration: underline;
+        }
+    }
+
+    .subtitle {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 10pt;
+        color: $drk-grey;
+
+        .highlight {
+            font-weight: bold;
+        }
+    }   
+    .description {
+        margin-top: 5px;
+        font-size: 12pt;
+        text-justify: auto;
+        text-align: justify;
+        margin-bottom: 0px;
+    }
+
+    .includes {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 10pt;
+        font-style: italic;
+        list-style: none;   
+
+        .highlight {
+            font-weight: bold;
+        }
+    }
+}
+
+.listitem-action {
+    width: 20px;
+    float: right;
+    margin-left: 10px;
+    color: $aucdblue;
+
+    &.not-actionable {
+        width: 0px;
+        margin-left: 0px;
+    }
+}
+
+.listitem-bookmarkicon {
+    margin-top: 0px;
+}
+
+.listitem-link {
+    color: $aucdblue;
+    
+    &:active {
+        color: $auclblue;
+    }
+}

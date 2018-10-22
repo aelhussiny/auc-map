@@ -1,0 +1,209 @@
+// Search Component //
+@import 'variables';
+
+.featurecard {
+    position: relative;
+    z-index: 1;
+    width: 20%;
+    min-width: $panel-min-width;
+    max-width: $panel-max-width;
+    background: white;
+    box-shadow: 0px 0px 13px 0px rgba($black,0.63);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column;
+    float: right;
+    overflow-x: hidden;
+    color: black;
+
+    &.is-closed {
+      min-width: 0;
+      width: 0;
+  }
+}
+
+.featurecardis-mobile {
+    font-family: 'Abel', sans-serif;
+    text-align: left;
+    color: black;
+    background: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 13px 0px rgba($black,0.63);
+    padding-bottom: 5px;
+    overflow-x: hidden;
+
+    &.is-closed {
+        height: 0px;
+        padding: 0px;
+    }
+}
+
+.featurecard-panel__headbar {
+    width: 100%;
+    height: 50px;
+    background: $aucdblue;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+
+    &.is-mobile {
+      height: 20px;
+      font-size: 20px;
+      padding-top: 10px;
+    }
+
+    .title {
+      width: 90%;
+      text-transform: uppercase;
+      text-align: left;
+
+      &.is-mobile {
+          color: white;
+          margin-top: -8px;
+          margin-left: -3px;
+      }
+    }
+
+    .closeButton {
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      top: 20px;
+      cursor: pointer;
+
+      &.is-mobile {
+          top: 6px;
+          margin-right: 5px;
+      }
+    }
+}
+
+.featurecard-more-info {
+    padding: 5px;
+    padding-bottom: 5px;
+    height: 18px;
+    margin-bottom: 3px;
+
+    &.is-mobile {
+        padding: 5px;
+        padding-bottom: 5px;
+        height: 18px;
+        margin-bottom: 3px;
+    }
+}
+
+.badge {
+    background-color: $aucdblue;
+    color: white;
+    border-radius: 10px;
+    font-size: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    float: right;
+    margin-right: 5px;
+
+    &.is-mobile {
+        background-color: $aucdblue;
+        color: white;
+        border-radius: 10px;
+        font-size: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+        padding-right: 4px;
+        float: right;
+        margin-right: 0px;
+    }
+}
+
+.featurecard-subtitle {
+    color: $drk-grey;
+    font-size: 15px;
+    float: left;
+    margin-top: 3px;
+    margin-left: 5px;
+    &.is-mobile {
+        color: $drk-grey;
+        font-size: 15px;
+        float: left;
+        margin-top: 3px;
+        margin-left: 0px;
+    }
+}
+
+.featurecard-description {  
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+    &.is-mobile {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: justify;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
+
+.featurecard-contains {    
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    font-size: 15px;
+    font-style: italic;
+
+    &.is-mobile {
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: justify;
+        font-size: 15px;
+        font-style: italic;
+    }
+}
+
+.featurecard-contains-title {
+    margin-bottom: 0px;
+    &.is-mobile {
+        margin-bottom: 0px;
+    }
+}
+
+.featurecard-contains-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    padding-left: 10px;
+
+    &.is-mobile {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        list-style: none;
+        padding-left: 10px;
+    }
+}
+
+.featurecard-bookmarkicon {
+    position: absolute;
+    top: 17px;
+    right: 35px;
+    cursor: pointer;
+
+    &.is-mobile {
+        position: absolute;
+        top: 3px;
+        right: 30px;
+    }
+}
