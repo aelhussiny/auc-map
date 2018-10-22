@@ -15,7 +15,8 @@ class BookmarkList extends Component {
         this.state = {
         };
         this.props.setFilter({
-            type: "bookmarks"
+            type: "bookmarks",
+            value: ""
         });
     }
 

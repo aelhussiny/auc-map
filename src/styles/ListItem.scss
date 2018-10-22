@@ -80,8 +80,21 @@
     float: right;
     margin-left: 10px;
     color: $aucdblue;
+
+    &.not-actionable {
+        width: 0px;
+        margin-left: 0px;
+    }
 }
 
 .listitem-bookmarkicon {
     margin-top: 0px;
+}
+
+.listitem-link {
+    color: $aucdblue;
+    
+    &:active {
+        color: $auclblue;
+    }
 }

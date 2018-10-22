@@ -4,7 +4,7 @@
 .featurecard {
     position: relative;
     z-index: 1;
-    width: $panel-width;
+    width: 20%;
     min-width: $panel-min-width;
     max-width: $panel-max-width;
     background: white;
@@ -23,16 +23,6 @@
       min-width: 0;
       width: 0;
   }
-
-    &.is-mobile {
-      min-width: 0;
-      width: 100%;
-
-      &.is-closed {
-        min-width: 0;
-        width: 0;
-      }
-    }
 }
 
 .featurecardis-mobile {
@@ -88,6 +78,7 @@
       border: none;
       color: white;
       top: 20px;
+      cursor: pointer;
 
       &.is-mobile {
           top: 6px;
@@ -208,6 +199,7 @@
     position: absolute;
     top: 17px;
     right: 35px;
+    cursor: pointer;
 
     &.is-mobile {
         position: absolute;

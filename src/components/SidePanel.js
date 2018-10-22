@@ -38,8 +38,7 @@ class SidePanel extends Component {
             "search": "Search",
             "bookmarks": "Bookmarks",
             "list": "Places",
-            "directory": "People",
-            "feature": "Point of Interest"
+            "directory": "People"
         }
 
         let contained = <div></div>;
@@ -53,6 +52,8 @@ class SidePanel extends Component {
             case "bookmarks":
                 contained = <BookmarkList />
                 break;
+            case "directory":
+                contained = <Search />
         }
 
         return (

@@ -3,57 +3,78 @@
   , "apiUrl": "api"
   , "loginUrl": "api/auth/arcgis"
   , "logoutUrl": "api/logout"
-  , "webmapId": "5bba817806c846fdbfc968db06e09317"
+  , "webmapId": "3fa7721e699a447bbddb4bd8f75af92b"
   , "jsapiUrl": "https://js.arcgis.com/4.9/"
   , "jsapiV4": true
-  , "portalUrl": "https://ps-dubai.maps.arcgis.com"
-  , "locationsServicePath": "https://services2.arcgis.com/hUPR9iC6qnMcwWsa/ArcGIS/rest/services/AUCBuildings/FeatureServer/0"
-  , "sublocationsServicePath": "https://services2.arcgis.com/hUPR9iC6qnMcwWsa/ArcGIS/rest/services/AUCSublocations/FeatureServer/0"
+  , "portalUrl": "https://smartdubai.maps.arcgis.com"
+  , "locationsServicePath": "https://services5.arcgis.com/2lzWODtLAfYXzk2g/arcgis/rest/services/AUCMapService/FeatureServer/0"
+  , "sublocationsServicePath": "https://services5.arcgis.com/2lzWODtLAfYXzk2g/arcgis/rest/services/AUCMapService/FeatureServer/1"
   , "locationsLayerName": "AUCBuildings"
   , "categories": {
       "ADMIN": {
         "name": "Administrative",
-        "icon": "assignment_ind"
+        "icon": "assignment_ind",
+        "include": true
       }
       , "ACADEM": {
         "name": "Academic",
-        "icon": "school"
+        "icon": "school",
+        "include": true
       }
       , "ART": {
         "name": "Arts",
-        "icon": "brush"
+        "icon": "brush",
+        "include": true
       }
       , "ATHL": {
         "name": "Athletics",
-        "icon": "fitness_center"
+        "icon": "fitness_center",
+        "include": true
       }
       , "COMMON": {
         "name": "Common Public Event Places",
-        "icon": "panorama_horizontal"
+        "icon": "panorama_horizontal",
+        "include": true
       }
       , "DING": {
         "name": "Dining",
-        "icon": "restaurant"
+        "icon": "restaurant",
+        "include": true
       }
       , "LIB": {
         "name": "Libraries",
-        "icon": "import_contacts"
+        "icon": "import_contacts",
+        "include": true
       }
       , "PARK": {
         "name": "Parking",
-        "icon": "directions_car"
+        "icon": "directions_car",
+        "include": true
       }
       , "RES": {
         "name": "Residential",
-        "icon": "home"
+        "icon": "home",
+        "include": true
       }
       , "GARDN": {
         "name": "Garden",
-        "icon": "landscape"
+        "icon": "landscape",
+        "include": true
       }
       , "GATE": {
         "name": "Gates and Entrances",
-        "icon": "lock_open"
+        "icon": "lock_open",
+        "include": true
+      }
+      , "OTHER": {
+        "name": "Other",
+        "icon": "add",
+        "include": true
+      }
+      , "PERSON": {
+        "name": "Person",
+        "icon": "person",
+        "include": false
       }
     }
 }

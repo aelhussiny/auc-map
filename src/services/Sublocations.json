@@ -1,0 +1,769 @@
+[{
+        "attributes": {
+            "NAME": "Academic Advising Center",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 35
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Accounting Department",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Admissions",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 54
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Alumni and Trustee Affairs",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Arab and Islamic Civilizations",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Arabic Language Institute",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Arts",
+            "CATEGORY": "ART",
+            "DESCR": null,
+            "LOCATIONID": 53
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Athletics Office",
+            "CATEGORY": "ATHL",
+            "DESCR": null,
+            "LOCATIONID": 62
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "AUC Forum",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Bank (CIB)",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Biology",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Bookstore",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Career Center",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Center for Arabic Study Abroad",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Center for Learning and Teaching",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 34
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Chemistry",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Citadel Capital Financial Services Center",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Classroom Technologies and Media Services",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 34
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Clinic",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Communications",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Computer Science and Engineering",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Construction and Architectural Engineering",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Copy Center",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Core Curriculum",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 35
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Cynthia Nelson Institute for Gender and Women's Studies",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Day Care Center",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Development",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Economic and Business History Research Center",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Economics",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "El-Khazindar Business Research and Case Center",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Electronics Engineering",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Engineering and Science Services",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "English and Comparative Literature",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "English Language Institute",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Equal Opportunity and Affirmative Action",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Faculty Lounge and Services",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "First-Year Experience and Leadership Institute",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Gerhart Theater",
+            "CATEGORY": "ART",
+            "DESCR": null,
+            "LOCATIONID": 53
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Graduate Student Services",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 47
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "History",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Human Resources",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Institutional Research",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "International Executive Education Institute",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "International Programs",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "International Student Affairs",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "John D. Gerhart Center for Philanthropy and Civic Engagement",
+            "CATEGORY": "ART",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Journalism and Mass Communication",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Kamal Adham Center for Television and Digital Journalism",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Law Department",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Leadership for Education and Development (LEAD) Program",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Libraries and Learning Technologies",
+            "CATEGORY": "LIB",
+            "DESCR": null,
+            "LOCATIONID": 34
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Malak Gabr Arts Theater",
+            "CATEGORY": "ART",
+            "DESCR": null,
+            "LOCATIONID": 53
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Management",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Mansour Group Lecture Hall",
+            "CATEGORY": "COMMON",
+            "DESCR": null,
+            "LOCATIONID": 35
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Mary Cross Lecture Hall",
+            "CATEGORY": "COMMON",
+            "DESCR": null,
+            "LOCATIONID": 107
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Mathematics and Actuarial Science",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Mechanical Engineering",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Medical Services",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Middle East Studies",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Mohamed Shafik Gabr Lecture Hall",
+            "CATEGORY": "COMMON",
+            "DESCR": null,
+            "LOCATIONID": 107
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Petroleum and Energy Engineering",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Philosophy",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Photographic Gallery",
+            "CATEGORY": "ART",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Physics",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Political Science",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "President's Office",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Prince Alwaleed American Studies Center",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Provost's Office",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Public Policy and Administration",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Rare Books and Special Collections Library",
+            "CATEGORY": "LIB",
+            "DESCR": null,
+            "LOCATIONID": 34
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Registrar",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Residential Life",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 18
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Rhetoric and Composition",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "School of Business",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "School of Global Affairs and Public Policy",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "School of Humanities and Social Sciences",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "School of Sciences and Engineering",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Security",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Senate Office",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Sharjah Art Gallery",
+            "CATEGORY": "ART",
+            "DESCR": null,
+            "LOCATIONID": 53
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Social Research Center",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 38
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Sociology Anthropology Psychology and Egyptology",
+            "CATEGORY": "ACADEM",
+            "DESCR": null,
+            "LOCATIONID": 44
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Sponsored Programs",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Student Accounting",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Student Financial Affairs",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 54
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Student Life",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Student Support",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 32
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Textbook Store",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 28
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Training and Development",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 37
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Travel Office",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 107
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "University Academic Computing Technologies",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 34
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "University Events",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 107
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "University Information Systems",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 35
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "University Technology Infrastructure",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 35
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Yousef Jameel MBA Fellows Program",
+            "CATEGORY": "ADMIN",
+            "DESCR": null,
+            "LOCATIONID": 30
+        }
+    },
+    {
+        "attributes": {
+            "NAME": "Yousef Jameel Science and Technology Research Center",
+            "CATEGORY": "OTHER",
+            "DESCR": null,
+            "LOCATIONID": 31
+        }
+    }
+]

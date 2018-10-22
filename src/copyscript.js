@@ -5,7 +5,6 @@ for(var i=0; i<document.getElementById("ctl00_ContentPlaceHolder1_DataList1").ch
     var info = document.getElementById("ctl00_ContentPlaceHolder1_DataList1").children[0].children[i].children[0].innerText.split("\n");
     for(var j=0; j<8; j++) {
         person[keys[j]] = info[j];
-        console.log(person[keys[j]], info[j]);
     }
     people.push(person);
 }
@@ -18,4 +17,4 @@ var dumpstring = "";
 people.forEach(function(person){
     dumpstring += JSON.stringify(person, null, '\t') + ",";
 });
-dumpstring;
+copy(dumpstring);

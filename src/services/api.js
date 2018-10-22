@@ -65,6 +65,15 @@ export default class Api {
     });
   }
 
+  getAppDir() {
+    return new Promise((resolve, reject) => {
+      this.request.makeRequest({
+        url: `${this.basename}/directory.json`,
+        method: 'get'
+      }).then(resp => resolve(resp));
+    });
+  }
+
   getUserGroups() {
     return new Promise((resolve, reject) => {
       this.request.makeRequest({

@@ -16,7 +16,7 @@ class ListItem extends Component {
     }
 
     highlight(str) {
-        if(this.props.highlight && this.props.highlight.length > 0 && str.toLowerCase().includes(this.props.highlight.toLowerCase())) {
+        if(this.props.highlight && this.props.highlight.length > 0 && str.toLowerCase && str.toLowerCase().includes(this.props.highlight.toLowerCase())) {
             return <span>{str.substring(0, str.toLowerCase().indexOf(this.props.highlight.toLowerCase()))}<span className="highlight">{str.substring(str.toLowerCase().indexOf(this.props.highlight.toLowerCase()), str.toLowerCase().indexOf(this.props.highlight.toLowerCase()) + this.props.highlight.length)}</span>{str.substring(str.toLowerCase().indexOf(this.props.highlight.toLowerCase()) + this.props.highlight.length)}</span>
         } else {
             return str;
@@ -81,8 +81,15 @@ class ListItem extends Component {
             bookmarktag = <span className="material-icons listitem-bookmarkicon" onClick={(e) => {e.stopPropagation();this.toggleBookmark(this.props.feature.attributes.OBJECTID);}}>{bookmarkicon}</span>;
         }
 
+        var notactionableclass = '';
+        var actiontag = <i className="material-icons">navigate_next</i>;
+        if(this.props.notactionable) {
+            actiontag = '';
+            notactionableclass = 'not-actionable';
+        }
+
         return (
-            <div className={"listitem " + isselected} onClick={() => {this.props.onClick(this.props.feature);}}>
+            <div className={"listitem " + isselected} onClick={() => {if(this.props.onClick){this.props.onClick(this.props.feature);}}}>
                 <div className="listitem-icon">
                     <i className="material-icons">{this.props.config.categories[category].icon}</i>
                 </div>
@@ -92,8 +99,8 @@ class ListItem extends Component {
                     {descriptiontag}
                     {includestag}
                 </div>
-                <div className="listitem-action">
-                    <i className="material-icons">navigate_next</i>
+                <div className={"listitem-action " + notactionableclass}>
+                    {actiontag}
                     {bookmarktag}
                 </div>
             </div>

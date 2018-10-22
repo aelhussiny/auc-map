@@ -40,7 +40,7 @@ class CategoryList extends Component {
             <div className="categorylist">
                 {categorybar}
                 <div className={"listcontainer " + isMobile}>
-                    <List style={{margin: "10px"}} />
+                    <List />
                 </div>
             </div>
         );

@@ -61,6 +61,7 @@ class Map extends Component {
         }
       };
       this.view.graphics.add(graphic);
+      this.view.goTo({target: graphic, zoom: this.view.zoom});
     }
   }
 
