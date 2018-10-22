@@ -156,7 +156,7 @@ class List extends Component {
         if (listitems.length === 0){
             contained = <div style={{textAlign: "center"}}><h2>Oh, no!</h2>Seems like we couldn't find what you're looking for. Please try something different.</div>;
             if (filter.type === "bookmarks") {
-                contained = <div style={{textAlign: "center"}}><h2>Start Bookmarking</h2>Seems like you don't have any bookmarks. Start bookmarking places to see them on this list.</div>;                
+                contained = <div style={{textAlign: "center"}}><h2>Start Bookmarking!</h2>Seems like you don't have any bookmarks yet. Start bookmarking places to see them on this list.</div>;                
             }
         }
 
